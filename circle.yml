@@ -1,0 +1,10 @@
+checkout:
+  post:
+    - git submodule sync
+    - git submodule update --init
+    - mvn install
+    - cp -R ./target/BossBarAPI-0.1dev.jar $CIRCLE_ARTIFACTS
+
+machine:
+  java:
+    version: oraclejdk8
