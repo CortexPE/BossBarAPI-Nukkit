@@ -31,11 +31,11 @@ public class BossBarAPI extends PluginBase {
     }
     
     @EventHandler
-    public void onPlayerJoin(PlayerJoinEvent e) 
+    public void onPlayerJoin(PlayerJoinEvent e) {
         BossEventPacket pk = new BossEventPacket();
         String message = TextFormat.LIGHT_PURPLE + "Test BAR!";
         BossEventPacket.setMessage(Player player, String message);
         pk.eid = entity.getId();
         this.getServer().broadcastPacket(entity.getViewers(), pk);
-    } 
+    }
 }
