@@ -38,8 +38,8 @@ public class BossBarAPI extends PluginBase {
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent e) {
         BossEventPacket boss = new BossEventPacket(); 
-        boss.WriteUnsignedVarLong(player.EntityId); 
-        boss.WriteSignedVarLong(mob.EntityId); 
-        player.sendPackage(boss);
+        boss.WriteUnsignedVarLong(49); 
+        boss.WriteSignedVarLong(52); 
+        this.getServer().broadcastPacket(52.getViewers(), pk);
     }
 }
