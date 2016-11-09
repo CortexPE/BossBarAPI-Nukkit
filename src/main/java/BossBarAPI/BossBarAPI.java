@@ -18,6 +18,7 @@ public class BossBarAPI extends PluginBase {
     @Override
     public void onLoad() {
         this.getLogger().info(TextFormat.WHITE + "BossBarAPI loaded!");
+        this.getServer().getPluginManager().registerEvents(new PlayerJoinEvent(), this);
     }
 
     @Override
@@ -33,9 +34,8 @@ public class BossBarAPI extends PluginBase {
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent e) {
         BossEventPacket pk = new BossEventPacket();
-        String message = TextFormat.LIGHT_PURPLE + "Test BAR!";
-        BossEventPacket.setMessage(Player player, String message);
         pk.eid = entity.getId();
+        e.entity.setName("Pooop");
         this.getServer().broadcastPacket(entity.getViewers(), pk);
     }
 }
