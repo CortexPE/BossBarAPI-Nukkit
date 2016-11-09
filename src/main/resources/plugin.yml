@@ -1,0 +1,8 @@
+name: BossBarAPI
+main: BossBarAPI.BossBarAPI
+version: "0.1dev"
+api: ["1.0.0"]
+load: STARTUP
+author: "NycuRO"
+description: BossBarAPI from PC translated for Nukkit :)
+website: https://github.com/NycuRO/BossBarAPI
