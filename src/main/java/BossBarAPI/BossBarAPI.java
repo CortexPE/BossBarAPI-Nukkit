@@ -19,12 +19,12 @@ public class BossBarAPI extends PluginBase {
     @Override
     public void onLoad() {
         this.getLogger().info(TextFormat.WHITE + "BossBarAPI loaded!");
-        this.getServer().getPluginManager().registerEvents(new PlayerJoinEvent(), this);
     }
 
     @Override
     public void onEnable() {
         this.getLogger().info(TextFormat.DARK_GREEN + "BossBarAPI enabled!");
+        getServer().getPluginManager().registerEvents(this, this);
     }
 
     @Override
