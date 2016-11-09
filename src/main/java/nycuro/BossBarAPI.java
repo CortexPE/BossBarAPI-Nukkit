@@ -8,17 +8,17 @@ public class BossBarAPI extends PluginBase {
     @Override
     public void onLoad() {
         registerGenerator();
-        this.getLogger().info(TextFormat.WHITE + "BiomeMaster loaded!");
+        this.getLogger().info(TextFormat.WHITE + "BossBarAPI loaded!");
     }
 
     @Override
     public void onEnable() {
-        this.getLogger().info(TextFormat.DARK_GREEN + "Biome master enabled!");
+        this.getLogger().info(TextFormat.DARK_GREEN + "BossBarAPI enabled!");
         getServer().getPluginManager().registerEvents(listener, this);
     }
 
     @Override
     public void onDisable() {
-        this.getLogger().info(TextFormat.DARK_RED + "BiomeMaster disabled!");
+        this.getLogger().info(TextFormat.DARK_RED + "BossBarAPI disabled!");
     }
 }
