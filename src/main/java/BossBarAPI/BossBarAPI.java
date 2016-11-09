@@ -14,9 +14,10 @@ import cn.nukkit.event.EventHandler;
 import cn.nukkit.event.Listener;
 import cn.nukkit.event.player.PlayerJoinEvent;
 
+import cn.nukkit.event.Listener;
+import cn.nukkit.plugin.Plugin;
+
 public class BossBarAPI extends PluginBase {
-    
-    public static final int NETWORK_ID = 52;
 
     @Override
     public void onLoad() {
@@ -34,15 +35,11 @@ public class BossBarAPI extends PluginBase {
         this.getLogger().info(TextFormat.DARK_RED + "BossBarAPI disabled!");
     }
     
-    @Override
-    public int getNetworkId() {
-        return NETWORK_ID;
-    }
-    
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent e) {
-        BossEventPacket pk = new BossEventPacket();
-        pk.type = this.getNetworkId();
-        this.getServer().broadcastPacket(pk.type.getViewers(), pk);
+        BossEventPacket boss = new BossEventPacket(); 
+        boss.WriteUnsignedVarLong(player.EntityId); 
+        boss.WriteSignedVarLong(mob.EntityId); 
+        player.sendPackage(boss);
     }
 }
