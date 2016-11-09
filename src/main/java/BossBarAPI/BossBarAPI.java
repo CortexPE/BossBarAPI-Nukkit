@@ -37,4 +37,5 @@ public class BossBarAPI extends PluginBase {
         BossEventPacket.setMessage(Player player, String message);
         pk.eid = entity.getId();
         this.getServer().broadcastPacket(entity.getViewers(), pk);
+    } 
 }
