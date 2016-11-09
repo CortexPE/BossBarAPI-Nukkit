@@ -35,7 +35,7 @@ public class BossBarAPI extends PluginBase {
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent e) {
         BossEventPacket pk = new BossEventPacket();
-        pk.eid = entity.getId();
+        pk.eid = entity.getId(52);
         pk.setName("Pooop");
         this.getServer().broadcastPacket(entity.getViewers(), pk);
     }
