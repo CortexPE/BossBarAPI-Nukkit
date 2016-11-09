@@ -8,6 +8,7 @@ import java.util.Map;
 
 import cn.nukkit.Server;
 import cn.nukkit.Player;
+import cn.nukkit.entity.Entity;
 
 import cn.nukkit.event.EventHandler;
 import cn.nukkit.event.Listener;
