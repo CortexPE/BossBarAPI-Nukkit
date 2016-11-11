@@ -2,7 +2,7 @@ package BossBarAPI;
 
 import cn.nukkit.scheduler.PluginTask;
 
-public class BossBarAPITask extends PluginTask<MainClass> {
+public class BossBarAPITask extends PluginTask<BossBarAPI> {
 
     public BossBarAPITask(BossBarAPI owner) {
         super(owner);
