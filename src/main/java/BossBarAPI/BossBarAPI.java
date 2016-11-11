@@ -24,7 +24,6 @@ public class BossBarAPI extends PluginBase {
     @Override
     public void onEnable() {
         this.getLogger().info(TextFormat.DARK_GREEN + "BossBarAPI enabled!");
-        this.getServer().getPluginManager().registerEvents(new EventListener(this), this);
     }
 
     @Override
@@ -32,7 +31,6 @@ public class BossBarAPI extends PluginBase {
         this.getLogger().info(TextFormat.DARK_RED + "BossBarAPI disabled!");
     }
     
-    @EventHandler
     public void onPlayerJoin(PlayerJoinEvent e) {
         BossEventPacket pk = new BossEventPacket();
         e.getPlayer().setNameTag("BossBarAPI NameTag");
