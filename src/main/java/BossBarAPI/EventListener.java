@@ -6,9 +6,9 @@ import cn.nukkit.event.Listener;
 import cn.nukkit.event.server.ServerCommandEvent;
 
 public class EventListener implements Listener {
-    MainClass plugin;
+    BossBarAPI plugin;
 
-    public EventListener(MainClass plugin) {
+    public EventListener(BossBarAPI plugin) {
         this.plugin = plugin;
     }
 
