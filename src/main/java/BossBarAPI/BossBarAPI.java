@@ -24,6 +24,7 @@ public class BossBarAPI extends PluginBase {
     @Override
     public void onEnable() {
         this.getLogger().info(TextFormat.DARK_GREEN + "BossBarAPI enabled!");
+        this.getServer().getScheduler().scheduleRepeatingTask(new BossBarAPITask(this), 1);
     }
 
     @Override
