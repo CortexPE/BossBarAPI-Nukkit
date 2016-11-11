@@ -5,8 +5,8 @@
 	<groupId>BossBarAPI</groupId>
 	<artifactId>BossBarAPI</artifactId>
 	<version>0.1dev</version>
-	<name>BiomeMaster</name>
-	<description>Add more biomes for Nukkit and get more features!</description>
+	<name>BossBarAPI</name>
+	<description>BossBarAPI from PC translated for Nukkit</description>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
