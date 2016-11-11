@@ -10,6 +10,6 @@ public class BossBarAPITask extends PluginTask<BossBarAPI> {
 
     @Override
     public void onRun(int currentTick) {
-        this.plugin.getServer().getScheduler().scheduleRepeatingTask(), 10);
+        this.plugin.getServer().getScheduler().scheduleRepeatingTask();
     }
 }
