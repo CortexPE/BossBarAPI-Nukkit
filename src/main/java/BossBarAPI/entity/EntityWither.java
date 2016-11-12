@@ -1,6 +1,8 @@
 package BossBarAPI.entity;
 
 import cn.nukkit.entity.Entity;
+import cn.nukkit.level.format.FullChunk;
+import cn.nukkit.nbt.tag.CompoundTag;
 import cn.nukkit.item.Item;
 import cn.nukkit.network.protocol.AddEntityPacket;
 import cn.nukkit.Player;
