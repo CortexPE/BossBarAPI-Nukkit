@@ -27,3 +27,4 @@ public class FakeAttribute {
   public void getDefaultValue() {
     return this.min;
   }
+}
