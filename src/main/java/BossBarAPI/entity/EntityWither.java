@@ -6,7 +6,7 @@ import cn.nukkit.network.protocol.AddEntityPacket;
 import cn.nukkit.Player;
 
 public class EntityWither extends Entity {
-    public static final int NETWORK_ID = 33;
+    public static final int NETWORK_ID = 52;
   
     @Override
     public int getNetworkId() {
