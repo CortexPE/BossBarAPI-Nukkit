@@ -3,6 +3,9 @@ package BossBarAPI.task;
 import cn.nukkit.scheduler.PluginTask;
 import cn.nukkit.network.protocol.UpdateAttributesPacket;
 
+import BossBarAPI.attribute.FakeAttribute;
+import BossBarAPI.BossBarAPI;
+
 public class BossBarAPITask extends PluginTask<BossBarAPI> {
 
     public BossBarAPITask(BossBarAPI owner) {
