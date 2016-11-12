@@ -4,7 +4,8 @@ import cn.nukkit.plugin.PluginBase;
 import cn.nukkit.utils.TextFormat;
 import cn.nukkit.network.protocol.BossEventPacket;
 
-import BiomeMaster.entity.EntityWither;
+import BossBarAPI.entity.EntityWither;
+import BossBarAPI.task.BossBarAPITask;
 
 import java.util.Map;
 
