@@ -14,6 +14,8 @@ import cn.nukkit.plugin.Plugin;
 
 public class BossBarAPI extends PluginBase {
 
+    public static int wither;
+    
     @Override
     public void onLoad() {
         this.getLogger().info(TextFormat.WHITE + "BossBarAPI loaded!");
@@ -22,7 +24,10 @@ public class BossBarAPI extends PluginBase {
     @Override
     public void onEnable() {
         this.getLogger().info(TextFormat.DARK_GREEN + "BossBarAPI enabled!");
-        this.getServer().getScheduler().scheduleRepeatingTask(new BossBarAPITask(this), 1);
+        
+        Entity.registerEntity("Wither", EntityWither.class);
+        
+        this.getServer().getScheduler().scheduleRepeatingTask(new BossBarAPITask(this), 30);
     }
 
     @Override
